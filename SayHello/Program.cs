@@ -6,7 +6,11 @@ namespace SayHello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int maxNumPrint = 10;
+            while(maxNumPrint-- > 0)
+            {
+                Console.WriteLine("Hello World!");
+            }
         }
     }
 }
