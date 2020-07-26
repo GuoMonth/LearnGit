@@ -12,7 +12,7 @@ namespace SayHello
                 Console.WriteLine("Hello World!!!");
             }
 
-            Console.WriteLine("xxx:***");
+            Console.WriteLine("xxx:x");
 
         }
     }
