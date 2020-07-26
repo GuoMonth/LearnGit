@@ -23,11 +23,13 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - uses: actions/upload-artifact@master
+    - name: Publish
+      run: dotnet publish --configuration Release --no-restore
+    - uses: actions/upload-artifact@v2
       with:
           name: myartifacts
-          path: public/
-    - uses: actions/download-artifact@master
+          path: publish/
+    - uses: actions/download-artifact@v2
       with:
         name: myartifacts
-        path: public
+        path: publish
