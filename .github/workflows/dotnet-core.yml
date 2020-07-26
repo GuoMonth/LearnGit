@@ -28,8 +28,8 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
           name: myartifacts
-          path: publish/
+          path: /home/runner/work/LearnGit/LearnGit/SayHello/bin/Release/netcoreapp3.1/publish/
     - uses: actions/download-artifact@v2
       with:
         name: myartifacts
-        path: publish
+        path: /home/runner/work/LearnGit/LearnGit/SayHello/bin/Release/netcoreapp3.1/publish/
